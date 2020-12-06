@@ -1,0 +1,6 @@
+[submodule "third-party/AnsiStyle"]
+	path = third-party/AnsiStyle
+	url = https://github.com/dSyncro/AnsiStyle
+[submodule "third-party/Detective"]
+	path = third-party/Detective
+	url = https://github.com/dSyncro/Detective
