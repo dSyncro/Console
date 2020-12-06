@@ -4,3 +4,6 @@
 [submodule "third-party/Detective"]
 	path = third-party/Detective
 	url = https://github.com/dSyncro/Detective
+[submodule "third-party/Premaker"]
+	path = third-party/Premaker
+	url = https://github.com/dSyncro/Premaker
