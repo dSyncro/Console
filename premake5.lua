@@ -25,6 +25,12 @@ workspace "Console"
 
 	outputdir = "%{cfg.architecture}/%{cfg.system}/%{cfg.buildcfg}"
 
-include "third-party/Premaker"
-include "third-party/AnsiStyle/project"
-include "project"
+group "Build"
+	include "third-party/Premaker"
+
+group "Dependencies"
+	include "third-party/AnsiStyle/project"
+	include "third-party/Detective/project"
+
+group ""
+	include "project"
