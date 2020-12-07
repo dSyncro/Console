@@ -5,12 +5,7 @@ workspace "Console"
 	architecture "x86_64"
 	startproject "Console"
 
-	configurations
-	{
-		"Debug",
-		"Release",
-		"Dist"
-	}
+	include "./third-party/Premaker/customization/configurations.lua"
 
 	solution_items 
 	{
@@ -25,8 +20,7 @@ workspace "Console"
 
 	outputdir = "%{cfg.architecture}/%{cfg.system}/%{cfg.buildcfg}"
 
-group "Build"
-	include "third-party/Premaker"
+include "third-party/Premaker"
 
 group "Dependencies"
 	include "third-party/AnsiStyle/project"
