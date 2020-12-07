@@ -26,6 +26,6 @@ project "Console"
 	}
 
 group "Dependencies"
-	include "third-party/AnsiStyle/project"
-	include "third-party/Detective/project"
+	include "../third-party/AnsiStyle/project"
+	include "../third-party/Detective/project"
 group ""
