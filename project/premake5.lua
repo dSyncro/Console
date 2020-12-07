@@ -24,3 +24,8 @@ project "Console"
 	links {
 		"AnsiStyle"
 	}
+
+group "Dependencies"
+	include "third-party/AnsiStyle/project"
+	include "third-party/Detective/project"
+group ""

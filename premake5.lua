@@ -2,13 +2,13 @@ include "./third-party/Premaker/customization/solution_items.lua"
 
 workspace "Console"
 
-	architecture "x86_64"
 	startproject "Console"
 
-	include "./third-party/Premaker/customization/configurations.lua"
+	include "./third-party/Premaker/configurations.lua"
 
 	solution_items 
 	{
+		".gitmodules",
 		".gitignore",
 		".editorconfig",
 	}
@@ -21,10 +21,4 @@ workspace "Console"
 	outputdir = "%{cfg.architecture}/%{cfg.system}/%{cfg.buildcfg}"
 
 include "third-party/Premaker"
-
-group "Dependencies"
-	include "third-party/AnsiStyle/project"
-	include "third-party/Detective/project"
-
-group ""
-	include "project"
+include "project"
